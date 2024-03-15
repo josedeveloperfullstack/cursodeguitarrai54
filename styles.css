@@ -145,7 +145,8 @@
         z-index: 1000;
       }
       .logo img {
-        height: 100%; /* Ajusta la altura según necesites */
+        width: 100px;
+        height: 100px; /* Ajusta la altura según necesites */
         margin-left: 20px;
        
       }

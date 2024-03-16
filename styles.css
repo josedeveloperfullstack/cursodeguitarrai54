@@ -1,8 +1,103 @@
-/* Estilos generales para todos los dispositivos */
+* { 
+  margin: 0;  
+  padding: 0;
+} 
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
 
-@media screen and (max-width: 768px) {
-    /* Estilos para dispositivos móviles */
-     body {
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+
+.contenedor > div, 
+.contenedor .header, 
+.contenedor .inicio, 
+.contenedor .container, 
+.contenedor .video, 
+.contenedor .footer,
+.contenedor .container {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.contenedor .header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+}
+
+
+
+
+.contenedor .nav-button {
+  background-color: #e77319;
+      color: #ffffff;
+      padding: 10px 20px; 
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size: 16px; 
+}
+
+.nav-button:hover {
+  background-color: #dd1579;
+}
+
+.contenedor .inicio, 
+.contenedor .footer{
+  grid-column: span 2;
+ 
+}
+
+.contenedor .video {
+  width: 560; 
+  height: 315px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor .footer, 
+.contenedor .container {
+  color: black;
+  text-align: center;
+  bottom: 0;
+  width: auto;
+  height: auto;
+}
+
+
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     /*body {
       background-color: white;
       font-family: Arial, sans-serif;
     margin-top: 100px;
@@ -12,7 +107,7 @@
   
     header {
       display: flex;
-      justify-content: space-between; /* Alinea el contenido al centro */
+      justify-content: space-between; 
       align-items: center;
       padding: 5px;
       position: fixed;
@@ -23,48 +118,48 @@
     }
   
     .logo img {
-      height: 80px; /* Ajusta la altura según necesites */
+      height: 80px; 
       margin-left: 5px;
     }
   
     nav {
       background-color: white;
       color: black;
-      margin: auto; /* Reduce el margen lateral */
-      justify-content: center; /* Alinea los elementos al centro */
-    }
+      margin: auto; 
+      justify-content: center; 
+    
   
     button {
       background-color: #e77319;
       color: #ffffff;
-      padding: 10px 20px; /* Reduce el padding horizontal */
+      padding: 10px 20px; 
       margin: 10px 0;
       border-radius: 5px;
       border: none;
       cursor: pointer;
       text-decoration: none;
       transition: background-color 0.3s ease;
-      font-size: 16px; /* Reduce el tamaño de fuente */
+      font-size: 16px; 
     }
   
     main {
-      width: 500px; /* Ancho del contenedor */
-      padding: 2px; /* Espaciado interno */
-      /* Altura máxima del contenedor */
+      width: 500px; 
+      padding: 2px; 
+       Altura máxima del contenedor 
     }
   
     h1 {
-      font-size: 24px; /* Reduce el tamaño de fuente */
-      margin: 50px; /* Reduce el margen */
+      font-size: 24px; 
+      margin: 50px; 
       background-color: #f2dfe8;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       text-align: center;
     }
   
     h2 {
-      font-size: 20px; /* Reduce el tamaño de fuente */
-      margin: 50px; /* Reduce el margen */
-      padding: 5px; /* Reduce el padding */
+      font-size: 20px; 
+      margin: 50px; 
+      padding: 5px; 
     }
   
     .parrafo {
@@ -74,37 +169,37 @@
     }
   
     p {
-      font-size: 16px; /* Reduce el tamaño de fuente */
+      font-size: 16px; 
       margin: 10px;
     }
   
     .container {
-      flex-direction: column; /* Ajusta la dirección del contenedor */
+      flex-direction: column; 
       padding: 10px;
     
     }
   
     .benefits {
-      width: 100%; /* Ancho completo para dispositivos móviles */
-      margin-top: 20px; /* Reduce el margen superior */
+      width: 100%; 
+      margin-top: 20px; 
     }
   
     .benefits li {
-      margin-bottom: 5px; /* Reduce el espacio entre elementos de la lista */
-      font-size: 16px; /* Reduce el tamaño de fuente */
+      margin-bottom: 5px; 
+      font-size: 16px; 
     }
   
     .video {
-      width: 450px; /* Ancho completo para dispositivos móviles */
-      height: 315; /* Altura automática para mantener la proporción */
-      margin: 10px; /* Ajusta el margen */
+      width: 450px; 
+      height: 315; 
+      margin: 10px; 
     }
   
     .contact {
       margin: 30px;
       padding: 10px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-      font-size: 16px; /* Reduce el tamaño de fuente */
+      font-size: 16px; 
     }
     footer {
         color: black;
@@ -114,175 +209,282 @@
         width: 100%;
       }
 
-    /* Estilos específicos para dispositivos móviles */
-    /* Aquí puedes ajustar el tamaño de fuente, el espaciado y la disposición para pantallas más pequeñas */
+    
+
+body{
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin-bottom:  200px;
+  margin-top: 200px;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  gap: 3rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+.logo img {
+  width: 100px;
+  height: 100px; 
+  margin-left: 20px;
+ 
+}
+
+nav{
+  background-color: white;
+  color: black;
+  margin: 1px 60px;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #e77319;
+  color: #ffffff;
+  padding: 10px 40px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #dd1579;
+}
+
+main {
+  width: 100%; 
+  height: 100%; 
+  padding: 2px; 
+  max-height: 100%; 
+}  
+
+h1{
+  text-align: center;
+  font-size: 30px;
+  color: hsl(0, 0%, 20%);
+  margin: 30px;
+  text-decoration: none ;
+  background-color: #f2dfe8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1::first-letter 
+  font-size: 150%;
+}
+
+h1::before {
+  content: "🎸 "; 
+ 
+  font-size: 40px;
+}
+
+h1::after {
+  content: " 🎤"; 
+  font-size: 40px;
+
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  margin: 40px;
+  padding: 10px;
+  text-decoration: none ;
+  
+}
+
+.parrafo {
+  background-color: rgb(213, 221, 228);
+  margin: 10px 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+
+}
+p {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin: 10px 20px;
+  text-decoration: none ;
+}
+.container {
+  display: flex;
+  justify-content: space-between; 
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+ 
+.benefits {
+  width: 500px;
+  margin-top: 40px;  
+}
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+.benefits li {
+  margin-bottom: 10px;
+  color: rgb(69, 187, 56);
+  list-style: none;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.video {
+  width: 560; 
+  height: 315px; 
+  margin-right: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  overflow: hidden;
+  margin-left: auto;
+.contact {
+  margin-top: 80px;
+  margin-left: 160px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+     body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+    margin-top: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 5px;
+      position: fixed;
+      top: 0;
+      background-color: white;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    .logo img {
+      height: 80px; 
+      margin-left: 5px;
+    }
+  
+    nav {
+      background-color: white;
+      color: black;
+      margin: auto; 
+      justify-content: center; 
+    }
+  
+    button {
+      background-color: #e77319;
+      color: #ffffff;
+      padding: 10px 20px; 
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size: 16px; 
+    }
+  
+    main {
+      width: 500px;
+      padding: 2px; 
+      
+    }
+  
+    h1 {
+      font-size: 24px; 
+      margin: 50px; 
+      background-color: #f2dfe8;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 20px; 
+      
+      margin: 50px;
+      padding: 5px; 
+    }
+  
+    .parrafo {
+      margin: 50px;
+      padding: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    p {
+      font-size: 16px; 
+      margin: 10px;
+    }
+  
+    .container {
+      flex-direction: column; 
+      padding: 10px;
+    
+    }
+  
+    .benefits {
+      width: 100%; 
+      margin-top: 20px; 
+    }
+  
+    .benefits li {
+      margin-bottom: 5px; 
+      margin: 10px; 
+    }
+  
+    .contact {
+      margin: 30px;
+      padding: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+    }
+    footer {
+        color: black;
+        text-align: center;
+        padding: 10px;
+        bottom: 0;
+        width: 100%;
+      }
+
+    
   }
   
   @media screen and (min-width: 769px) and (max-width: 1024px) {
-    /* Estilos específicos para tabletas */
-    /* Puedes realizar ajustes en la disposición de los elementos para pantallas de tamaño mediano */
+    
+    
   }
   
   @media screen and (min-width: 1025px) {
     
-    body{
-        background-color: white;
-        font-family: Arial, sans-serif;
-        margin-bottom:  200px;
-        margin-top: 200px;
-        box-sizing: border-box;
-    }
     
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px;
-        position: fixed;
-        top: 0;
-        background-color: white;
-        width: 100%;
-        z-index: 1000;
-      }
-      .logo img {
-        width: 100px;
-        height: 100px; /* Ajusta la altura según necesites */
-        margin-left: 20px;
-       
-      }
-    
-    nav{
-        background-color: white;
-        color: black;
-        margin: 1px 60px;
-        justify-content: space-between;
-    }
-    
-    button {
-        background-color: #e77319;
-        color: #ffffff;
-        padding: 10px 40px;
-        margin: 10px 0;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-        font-size: 20px;
-      }
-      
-      button:hover {
-        background-color: #dd1579;
-      }
-      
-      main {
-        width: 100%; /* Ancho del contenedor */
-        height: 100%; /* Altura del contenedor */
-        padding: 2px; /* Espaciado interno */
-        max-height: 100%; /* Altura máxima del contenedor */
-    }  
-    
-    h1{
-        text-align: center;
-        font-size: 30px;
-        color: hsl(0, 0%, 20%);
-        margin: 30px;
-        text-decoration: none ;
-        background-color: #f2dfe8;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    }
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    h1::first-letter {
-        font-size: 150%; /* Tamaño de la primera letra más grande */
-    }
-    
-    h1::before {
-        content: "🎸 "; /* Agrega un emoji antes del título */
-        font-size: 40px;
-    }
-    
-    h1::after {
-        content: " 🎤"; /* Agrega un emoji después del título */
-        font-size: 40px;
-    
-    }
-    
-    h2 {
-        text-align: center;
-        font-size: 25px;
-        margin: 40px;
-        padding: 10px;
-        text-decoration: none ;
-        
-    }
-    
-    .parrafo {
-        background-color: rgb(213, 221, 228);
-        margin: 10px 20px;
-        padding: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        
-    
-    }
-    p {
-        text-align: center;
-        font-size: 20px;
-        color: #333;
-        margin: 10px 20px;
-        text-decoration: none ;
-    }
-    .container {
-        display: flex;
-        justify-content: space-between; 
-        margin: 10px;
-        padding: 10px;
-        width: 100%;
-    }
-    
-       
-    .benefits {
-        width: 500px;
-        margin-top: 40px;   /* Ancho deseado para la lista de beneficios */
-    }
-    .benefits ul {
-        list-style: none;
-        padding: 0;
-    }
-    .benefits li {
-        margin-bottom: 10px;
-        color: rgb(69, 187, 56);
-        list-style: none;
-        margin: 10px 0;
-        text-align: center;
-        font-size: 25px;
-        text-decoration: none;
-    }
-    
-    .video {
-        width: 560; /* Ancho del video */
-        height: 315px; /* Alto del video */
-        margin-right: 30px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tus preferencias */
-        overflow: hidden; /* Para que la sombra no se extienda más allá del borde del video */
-        margin-left: auto;
-    }
-    
-    .contact {
-        margin-top: 80px;
-        margin-left: 160px;
-        padding: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        text-align: center;
-        font-size: 20px;
-        text-decoration: none;
-    }
-    /* Estilos específicos para pantallas de escritorio */
-    /* Aquí puedes tener una disposición de varias columnas o ajustar el tamaño de ciertos elementos */
-  }
+
+   
+  }*/
 
  
   

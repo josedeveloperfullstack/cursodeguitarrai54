@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases de Guitarra- Academia i54</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="logo">
+                <img src="https://scontent.fclo3-2.fna.fbcdn.net/v/t39.30808-1/310618845_531362462332410_3105041425213569330_n.jpg?stp=dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h95z8YLBLbcAX9E0q2V&_nc_ht=scontent.fclo3-2.fna&oh=00_AfD8x080ll-0aThXHHOXlozrNlrm_mNEfYg1680aNBEzvQ&oe=65F8BA1C" alt="Academia i54">
+              </div>
+              
+                <nav class="nav">
+                    
+                    <button class="nav-button" href="#inicio">Inicio</button>
+                    <button class="nav-button" href="#clases">Clases</button>
+                    <button class="nav-button" href="#contacto">Contacto</button>
+                    
+                  </nav>
+                  
+        </header>
+        <main class="inicio">
+            <h1>¡Aprende a tocar la guitarra y deleitate Cantando!</h1>
+            <h2>En este curso aprenderás desde cero con clases presenciales durante 3 meses</h2>
+            <div class="clases"> 
+            <section class="parrafo">
+                <p>Si nunca has tocado la guitarra, no te preocupes. Con éste curso te enseñaremos desde cero. 
+                    Aprenderás a tocar acordes, escalas, ritmos y mucho más. 
+                    Nuestros profesores te enseñarán de forma sencilla y amena. </p>
+               
+            </section> 
+            </div>
+            <h2>¡Anímate y ven a aprender con nosotros!</h2>
+            
+            <div class="container">
+                
+                    <div class="benefits">
+                        <ul >
+                            <li><i class="fas-fa-check-circle"></i> ✅Clases Presenciales</li>
+                            <li><i class="fas-fa-check-circle"></i> ✅Curso desde Cero</li>
+                            <li><i class="fas-fa-check-circle"></i> ✅Clases Grupales</li>
+                            <li><i class="fas-fa-check-circle"></i> ✅Clases días Sábados</li>
+                        </ul>
+                    </div>
+                
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/X79_0mKYvjk" frameborder="0" title="Guitar Lesson Video"></iframe>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contact">
+                    <button class="nav-button">¡Inscríbete Ahora!</button>
+                    <p>Si deseas inscribirte o tienes alguna duda, no dudes en contactarnos. 
+                        Estamos para ayudarte. </p>
+                </div>
+        </main>
+        <footer class="footer"> 
+            <div >
+                <p>Academia Artística i54- 2024</p>
+                <p>Cel: 3004695215</p>
+                <p>Creado por Smart Chat Web Group</p>
+            </div>
+        </footer>
+
+
+    </div>
+    
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/4b6a1cbe-8ad9-40e4-96cd-3c71e988a82e/webchat/config.js" defer></script>
+</body>
+</html>
+* { 
+  margin: 0;  
+  padding: 0;
+} 
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+
+.contenedor > div, 
+.contenedor .header, 
+.contenedor .inicio, 
+.contenedor .container, 
+.contenedor .video, 
+.contenedor .footer,
+.contenedor .container {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.contenedor .header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  padding: 10px;
+}
+
+.contenedor .header .logo img {
+  width: 100px;
+  height: 100px; 
+  margin: 20px;
+  
+}
+
+
+.contenedor .nav-button {
+  background-color: #e77319;
+      color: #ffffff;
+      padding: 10px 20px; 
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size: 16px; 
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.269);
+}
+
+.nav-button:hover {
+  background-color: #dd1579;
+}
+
+.contenedor .inicio, 
+.contenedor .footer{
+  grid-column: span 2;
+ 
+}
+
+.container .video {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%; /* El video ocupará todo el ancho del contenedor */
+  max-height: 100%; /* El video ocupará todo el alto del contenedor */
+  width: 560;
+  height: 315px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+.video iframe {
+  margin:0;
+  padding:0;
+  width: 100%; /* El video ocupará todo el ancho del contenedor */
+  height: 100%; /* El video ocupará todo el alto del contenedor */
+}
+
+.contenedor .footer, 
+.contenedor .container {
+  color: black;
+  text-align: center;
+  bottom: 0;
+  width: auto;
+  height: auto;
+}
+
+
+h1 {
+  font-size: 24px; 
+  margin: 50px; 
+  background-color: #f2dfe8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px; 
+  margin: 50px; 
+  padding: 5px; 
+}
+
+.parrafo {
+  margin: 50px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 16px; 
+  margin: 10px;
+}
+
+.benefits li {
+  margin-bottom: 10px;
+  color: rgb(69, 187, 56);
+  list-style: none;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+}    
+     
+.contact {
+  
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+}     
+     
+     
+     
+     
+     
+     
+     /*body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+    margin-top: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 5px;
+      position: fixed;
+      top: 0;
+      background-color: white;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    .logo img {
+      height: 80px; 
+      margin-left: 5px;
+    }
+  
+    nav {
+      background-color: white;
+      color: black;
+      margin: auto; 
+      justify-content: center; 
+    
+  
+    button {
+      background-color: #e77319;
+      color: #ffffff;
+      padding: 10px 20px; 
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size: 16px; 
+    }
+  
+    main {
+      width: 500px; 
+      padding: 2px; 
+       Altura máxima del contenedor 
+    }
+  
+    h1 {
+      font-size: 24px; 
+      margin: 50px; 
+      background-color: #f2dfe8;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 20px; 
+      margin: 50px; 
+      padding: 5px; 
+    }
+  
+    .parrafo {
+      margin: 50px;
+      padding: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    p {
+      font-size: 16px; 
+      margin: 10px;
+    }
+  
+    .container {
+      flex-direction: column; 
+      padding: 10px;
+    
+    }
+  
+    .benefits {
+      width: 100%; 
+      margin-top: 20px; 
+    }
+  
+    .benefits li {
+      margin-bottom: 5px; 
+      font-size: 16px; 
+    }
+  
+    .video {
+      width: 450px; 
+      height: 315; 
+      margin: 10px; 
+    }
+  
+    .contact {
+      margin: 30px;
+      padding: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      font-size: 16px; 
+    }
+    footer {
+        color: black;
+        text-align: center;
+        padding: 10px;
+        bottom: 0;
+        width: 100%;
+      }
+
+    
+
+body{
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin-bottom:  200px;
+  margin-top: 200px;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  gap: 3rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+}
+.logo img {
+  width: 100px;
+  height: 100px; 
+  margin-left: 20px;
+ 
+}
+
+nav{
+  background-color: white;
+  color: black;
+  margin: 1px 60px;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #e77319;
+  color: #ffffff;
+  padding: 10px 40px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #dd1579;
+}
+
+main {
+  width: 100%; 
+  height: 100%; 
+  padding: 2px; 
+  max-height: 100%; 
+}  
+
+h1{
+  text-align: center;
+  font-size: 30px;
+  color: hsl(0, 0%, 20%);
+  margin: 30px;
+  text-decoration: none ;
+  background-color: #f2dfe8;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1::first-letter 
+  font-size: 150%;
+}
+
+h1::before {
+  content: "🎸 "; 
+ 
+  font-size: 40px;
+}
+
+h1::after {
+  content: " 🎤"; 
+  font-size: 40px;
+
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  margin: 40px;
+  padding: 10px;
+  text-decoration: none ;
+  
+}
+
+.parrafo {
+  background-color: rgb(213, 221, 228);
+  margin: 10px 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+
+}
+p {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin: 10px 20px;
+  text-decoration: none ;
+}
+.container {
+  display: flex;
+  justify-content: space-between; 
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+ 
+.benefits {
+  width: 500px;
+  margin-top: 40px;  
+}
+.benefits ul {
+  list-style: none;
+  padding: 0;
+}
+.benefits li {
+  margin-bottom: 10px;
+  color: rgb(69, 187, 56);
+  list-style: none;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.video {
+  width: 560; 
+  height: 315px; 
+  margin-right: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+  overflow: hidden;
+  margin-left: auto;
+.contact {
+  margin-top: 80px;
+  margin-left: 160px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    
+     body {
+      background-color: white;
+      font-family: Arial, sans-serif;
+    margin-top: 100px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between; 
+      align-items: center;
+      padding: 5px;
+      position: fixed;
+      top: 0;
+      background-color: white;
+      width: 100%;
+      z-index: 1000;
+    }
+  
+    .logo img {
+      height: 80px; 
+      margin-left: 5px;
+    }
+  
+    nav {
+      background-color: white;
+      color: black;
+      margin: auto; 
+      justify-content: center; 
+    }
+  
+    button {
+      background-color: #e77319;
+      color: #ffffff;
+      padding: 10px 20px; 
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      font-size: 16px; 
+    }
+  
+    main {
+      width: 500px;
+      padding: 2px; 
+      
+    }
+  
+    h1 {
+      font-size: 24px; 
+      margin: 50px; 
+      background-color: #f2dfe8;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 20px; 
+      
+      margin: 50px;
+      padding: 5px; 
+    }
+  
+    .parrafo {
+      margin: 50px;
+      padding: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+  
+    p {
+      font-size: 16px; 
+      margin: 10px;
+    }
+  
+    .container {
+      flex-direction: column; 
+      padding: 10px;
+    
+    }
+  
+    .benefits {
+      width: 100%; 
+      margin-top: 20px; 
+    }
+  
+    .benefits li {
+      margin-bottom: 5px; 
+      margin: 10px; 
+    }
+  
+    .contact {
+      margin: 30px;
+      padding: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      font-size: 16px;
+    }
+    footer {
+        color: black;
+        text-align: center;
+        padding: 10px;
+        bottom: 0;
+        width: 100%;
+      }
+
+    
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    
+  }
+  
+  @media screen and (min-width: 1025px) {
+    
+    
+
+   
+  }*/
+
+ 
+  
+
+
+
+
+
+

@@ -26,7 +26,7 @@ body {
 .contenedor .footer,
 .contenedor .container {
   background-color: #fff;
-  padding: 1rem;
+  padding: 10px;
   border-radius: 4px;
 }
 
@@ -90,10 +90,6 @@ body {
 
  
 .contenedor .container {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: flex-start;
   text-align: center;
   color: black;
   text-align: center;
@@ -130,9 +126,7 @@ p {
 }
 
 .benefits li {
-  width: 25rem;
-  display: flex;
-  align-items: flex-start;
+  
   margin: 1.3rem;
   padding: 1rem;
   color: rgb(69, 187, 56);
@@ -151,9 +145,10 @@ p {
   font-size: 20px;
   text-decoration: none;
 }     
-     
-     
-     
+   
+.footer {
+    text-align: center;
+}   
      
      
      

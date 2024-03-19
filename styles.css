@@ -41,6 +41,8 @@ body {
   position: sticky;
   top: 0;
   
+
+  
 }
 
 .contenedor .header .logo img {
@@ -171,12 +173,17 @@ p {
    
 .footer {
     text-align: center;
+
 }   
      
 .contenedor .nav {
   background-color: none;
 }
 
+.footer a {
+  text-decoration: none;
+  color: black;
+}
      
      
      /*body {

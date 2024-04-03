@@ -1,8 +1,3 @@
-
-
-
-
-
 document.querySelectorAll('.nav-button2').forEach(function(button) {
     button.addEventListener('click', function() {
         let divDestino = document.querySelector('.parrafo'); // Selecciona el primer div con la clase 'benefits'
